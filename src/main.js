@@ -27,10 +27,6 @@ import Maps from "@/views/admin/Maps.vue";
 import Login from "@/views/auth/Login.vue";
 
 // views without layouts
-
-import Landing from "@/views/Landing.vue";
-import Profile from "@/views/Profile.vue";
-import Index from "@/views/Index.vue";
 import axios from "axios";
 import {logoutRoutine} from "@/script/auth";
 
@@ -46,7 +42,7 @@ const routes = [
   },
   {
     path: "/",
-    component: Index,
+    redirect: "/admin/dashboard",
     meta: {
       requiresAuth: true,
     }
@@ -116,23 +112,6 @@ const routes = [
         }
       },
     ],
-  },
-  /**
-   * Other page (TODO: delete later)
-   */
-  {
-    path: "/landing",
-    component: Landing,
-    meta: {
-      requiresAuth: true,
-    }
-  },
-  {
-    path: "/profile",
-    component: Profile,
-    meta: {
-      requiresAuth: true,
-    }
   },
 ];
 

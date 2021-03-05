@@ -8,6 +8,7 @@ export const loginRoutine = user => new Promise ((resolve, reject) => {
                 const token = resp.data.token
                 localStorage.setItem('user-token', token) // store the token in localstorage
                 axios.defaults.headers.common['Authorization'] = token
+                console.log(token);
                 resolve(resp)
             }
             //Logout to avoid unexpect connexion

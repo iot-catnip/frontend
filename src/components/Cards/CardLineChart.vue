@@ -24,9 +24,11 @@
 </template>
 <script>
 import Chart from "chart.js";
+import {prises} from "@/script/dataLoading";
 
 export default {
-  mounted: function () {
+  mounted: async function () {
+    const data = await prises().item
     this.$nextTick(function () {
       var config = {
         type: "line",
@@ -45,7 +47,7 @@ export default {
               label: new Date().getFullYear(),
               backgroundColor: "#4c51bf",
               borderColor: "#4c51bf",
-              data: [65, 78, 66, 44, 56, 67, 75],
+              data: data,
               fill: false,
             },
             {
