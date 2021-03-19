@@ -8,7 +8,7 @@
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
               statSubtitle="TRAFFIC"
-              statTitle="350,897"
+              :statTitle="user.username"
               statArrow="up"
               statPercent="3.48"
               statPercentColor="text-green-500"
@@ -61,10 +61,21 @@
 
 <script>
 import CardStats from "@/components/Cards/CardStats.vue";
+import {prises} from "@/script/dataLoading";
 
 export default {
+  name: "header-stats",
+  data() {
+    const data = prises().item
+    console.log(data)
+    return {
+      user: {
+        username:""
+      }
+    }
+  },
   components: {
     CardStats,
-  },
+  }
 };
 </script>

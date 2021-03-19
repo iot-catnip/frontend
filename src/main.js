@@ -29,6 +29,7 @@ import Login from "@/views/auth/Login.vue";
 // views without layouts
 import axios from "axios";
 import {logoutRoutine} from "@/script/auth";
+import store from "core-js";
 
 // routes
 
@@ -36,10 +37,6 @@ const routes = [
   /**
    * Main Paths
    */
-  {
-    path: "*",
-    redirect: "/",
-  },
   {
     path: "/",
     redirect: "/admin/dashboard",
@@ -145,5 +142,6 @@ router.beforeEach((to, from, next) => {
 
 new Vue({
   router,
-  render: (h) => h(App),
+  store,
+  render: h => h(App)
 }).$mount("#app");

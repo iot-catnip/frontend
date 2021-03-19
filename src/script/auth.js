@@ -5,7 +5,7 @@ export const loginRoutine = user => new Promise ((resolve, reject) => {
         .then(resp => {
             //check if response is correct
             if (resp.data.success){
-                const token = resp.data.token
+                const token = `Bearer ${resp.data.token}`
                 localStorage.setItem('user-token', token) // store the token in localstorage
                 axios.defaults.headers.common['Authorization'] = token
                 console.log(token);

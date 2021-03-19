@@ -28,7 +28,7 @@ import {prises} from "@/script/dataLoading";
 
 export default {
   mounted: async function () {
-    const data = await prises().item
+    const data = await prises()
     this.$nextTick(function () {
       var config = {
         type: "line",
@@ -134,5 +134,5 @@ export default {
       window.myLine = new Chart(ctx, config);
     });
   },
-};
+};CardLineChart
 </script>
