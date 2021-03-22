@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1071dbb7-4a39-4610-87a6-ef6a1075a26f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/script/lineChar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frontend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/tailwind.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cards/CardLineChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardLineChart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardStats.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardStats.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Headers/HeaderStats.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Headers/HeaderStats.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Admin.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/script/dataLoading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script/dataLoading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
     <configuration default="true" type="js.build_tools.npm">
       <command value="run" />
       <scripts>
@@ -74,6 +70,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build:tailwind" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:tailwind" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build:tailwind" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,6 +95,8 @@
       <option name="presentableId" value="Default" />
       <updated>1616319312030</updated>
       <workItem from="1616319314020" duration="18918000" />
+      <workItem from="1616393627724" duration="747000" />
+      <workItem from="1616435715457" duration="5970000" />
     </task>
     <servers />
   </component>
@@ -110,5 +123,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

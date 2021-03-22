@@ -5,12 +5,28 @@
     <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
       <div class="flex flex-wrap items-center">
         <div class="relative w-full max-w-full flex-grow flex-1">
-          <h6 class="uppercase text-gray-200 mb-1 text-xs font-semibold">
-            Environment
-          </h6>
-          <h2 class="text-white text-xl font-semibold">
-            Température et Humidité
-          </h2>
+          <div class="flex flex-wrap">
+            <div class="w-full xl:w-10/12 mb-12 xl:mb-0 px-4">
+            <h6 class="uppercase text-gray-200 mb-1 text-xs font-semibold">
+              Environment
+            </h6>
+            <h2 class="text-white text-xl font-semibold">
+              Température et Humidité
+            </h2>
+            </div>
+            <div class="w-full xl:w-2/12 px-4">
+              <label class="block">
+                <span class="uppercase text-gray-200 mb-1 text-xs font-semibold">Période</span>
+                <select v-model="intervalPicker" v-on:change="loadGraph" class="form-select block w-full mt-1">
+                  <option value="1h">1 Heure</option>
+                  <option value="5h">5 Heures</option>
+                  <option value="1j">1 Jour</option>
+                  <option value="1w">1 Semaine</option>
+                  <option value="1m">1 Mois</option>
+                </select>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -27,106 +43,116 @@ import Chart from "chart.js";
 import {formatApiData, loadHumidity, loadTemperature} from "@/script/dataLoading";
 
 export default {
+  data() {
+    return {
+      intervalPicker:'1h',
+    }
+  },
   mounted: async function () {
-    const formattedTemp = formatApiData(await loadTemperature())
-    const formattedHumidity = formatApiData(await loadHumidity())
-    console.log(formattedTemp.date)
-    this.$nextTick(function () {
-      var config = {
-        type: "line",
-        data: {
-          labels: formattedTemp.date,
-          datasets: [
-            {
-              label: 'Temperature',
-              backgroundColor: "#4c51bf",
-              borderColor: "#4c51bf",
-              data: formattedTemp.data,
-              fill: false,
-            },
-            {
-              label: 'Humiditer',
-              fill: false,
-              backgroundColor: "#fff",
-              borderColor: "#fff",
-              data: formattedHumidity.data,
-            },
-          ],
-        },
-        options: {
-          maintainAspectRatio: false,
-          responsive: true,
-          title: {
-            display: false,
-            text: "Graphique des températures",
-            fontColor: "white",
+    await this.loadGraph();
+  },
+  methods:{
+    loadGraph:async function () {
+      const formattedHumidity = formatApiData(await loadHumidity())
+      const formattedTemp = formatApiData(await loadTemperature())
+      console.log(formattedTemp.date)
+      this.$nextTick(function () {
+        var config = {
+          type: "line",
+          data: {
+            labels: formattedTemp.date,
+            datasets: [
+              {
+                label: 'Temperature',
+                backgroundColor: "#4c51bf",
+                borderColor: "#4c51bf",
+                data: formattedTemp.data,
+                fill: false,
+              },
+              {
+                label: 'Humiditer',
+                fill: false,
+                backgroundColor: "#fff",
+                borderColor: "#fff",
+                data: formattedHumidity.data,
+              },
+            ],
           },
-          legend: {
-            labels: {
+          options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            title: {
+              display: false,
+              text: "Graphique des températures",
               fontColor: "white",
             },
-            align: "end",
-            position: "bottom",
-          },
-          tooltips: {
-            mode: "index",
-            intersect: false,
-          },
-          hover: {
-            mode: "nearest",
-            intersect: true,
-          },
-          scales: {
-            xAxes: [
-              {
-                ticks: {
-                  fontColor: "rgba(255,255,255,.7)",
-                },
-                display: true,
-                scaleLabel: {
-                  display: false,
-                  labelString: "Month",
-                  fontColor: "white",
-                },
-                gridLines: {
-                  display: false,
-                  borderDash: [2],
-                  borderDashOffset: [2],
-                  color: "rgba(33, 37, 41, 0.3)",
-                  zeroLineColor: "rgba(0, 0, 0, 0)",
-                  zeroLineBorderDash: [2],
-                  zeroLineBorderDashOffset: [2],
-                },
+            legend: {
+              labels: {
+                fontColor: "white",
               },
-            ],
-            yAxes: [
-              {
-                ticks: {
-                  fontColor: "rgba(255,255,255,.7)",
+              align: "end",
+              position: "bottom",
+            },
+            tooltips: {
+              mode: "index",
+              intersect: false,
+            },
+            hover: {
+              mode: "nearest",
+              intersect: true,
+            },
+            scales: {
+              xAxes: [
+                {
+                  ticks: {
+                    fontColor: "rgba(255,255,255,.7)",
+                  },
+                  display: true,
+                  scaleLabel: {
+                    display: false,
+                    labelString: "Month",
+                    fontColor: "white",
+                  },
+                  gridLines: {
+                    display: false,
+                    borderDash: [2],
+                    borderDashOffset: [2],
+                    color: "rgba(33, 37, 41, 0.3)",
+                    zeroLineColor: "rgba(0, 0, 0, 0)",
+                    zeroLineBorderDash: [2],
+                    zeroLineBorderDashOffset: [2],
+                  },
                 },
-                display: true,
-                scaleLabel: {
-                  display: false,
-                  labelString: "Value",
-                  fontColor: "white",
+              ],
+              yAxes: [
+                {
+                  ticks: {
+                    fontColor: "rgba(255,255,255,.7)",
+                  },
+                  display: true,
+                  scaleLabel: {
+                    display: false,
+                    labelString: "Value",
+                    fontColor: "white",
+                  },
+                  gridLines: {
+                    borderDash: [3],
+                    borderDashOffset: [3],
+                    drawBorder: false,
+                    color: "rgba(255, 255, 255, 0.15)",
+                    zeroLineColor: "rgba(33, 37, 41, 0)",
+                    zeroLineBorderDash: [2],
+                    zeroLineBorderDashOffset: [2],
+                  },
                 },
-                gridLines: {
-                  borderDash: [3],
-                  borderDashOffset: [3],
-                  drawBorder: false,
-                  color: "rgba(255, 255, 255, 0.15)",
-                  zeroLineColor: "rgba(33, 37, 41, 0)",
-                  zeroLineBorderDash: [2],
-                  zeroLineBorderDashOffset: [2],
-                },
-              },
-            ],
+              ],
+            },
           },
-        },
-      };
-      var ctx = document.getElementById("line-chart").getContext("2d");
-      window.myLine = new Chart(ctx, config);
-    });
-  },
+        };
+        var ctx = document.getElementById("line-chart").getContext("2d");
+        window.myLine = new Chart(ctx, config);
+      });
+    }
+  }
 };
 </script>

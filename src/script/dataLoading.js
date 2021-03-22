@@ -21,13 +21,13 @@ export const loadAvgHumidity = async function (){
 }
 
 export const loadTemperature = async function () {
-    let resp = await axios({url: '/api/temperature/', method: 'GET'});
+    let resp = await axios({url: `/api/temperature/1h`, method: 'GET'});
     let data = resp.data.data
     return data
 }
 
 export const loadHumidity = async function () {
-    let resp = await axios({url: '/api/humidite/', method: 'GET'});
+    let resp = await axios({url: `/api/temperature/1h`, method: 'GET'});
     let data = resp.data.data
     return data
 }
