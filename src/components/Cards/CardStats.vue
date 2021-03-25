@@ -68,10 +68,6 @@ export default {
       type: String,
       default: "text-green-500",
     },
-    statDescripiron: {
-      type: String,
-      default: "Since last month",
-    },
     statIconName: {
       type: String,
       default: "far fa-chart-bar",

@@ -7,46 +7,46 @@
         <div class="flex flex-wrap">
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="Température"
+              statSubtitle="Température Moyenne"
               :statTitle="temperature.avg"
               :statArrow="temperature.arrow"
               :statPercent="temperature.percent"
               statPercentColor="text-green-500"
               statDescripiron="Since last month"
-              statIconName="far fa-chart-bar"
+              statIconName="fas fa-thermometer-half"
               statIconColor="bg-red-500"
             />
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="Humidité"
+              statSubtitle="Humidité Moyenne"
               :statTitle="humidity.avg"
               :statArrow="humidity.arrow"
               :statPercent="humidity.percent"
               statPercentColor="text-red-500"
               statDescripiron="Since last week"
-              statIconName="fas fa-chart-pie"
-              statIconColor="bg-orange-500"
+              statIconName="fas fa-tint"
+              statIconColor="bg-blue-500"
             />
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="Consommation"
+              statSubtitle="Consommation Moyenne"
               :statTitle="consummation.avg"
               :statArrow="consummation.arrow"
               :statPercent="consummation.percent"
               statPercentColor="text-orange-500"
               statDescripiron="Since yesterday"
-              statIconName="fas fa-users"
-              statIconColor="bg-pink-500"
+              statIconName="fas fa-bolt"
+              statIconColor="bg-orange-500"
             />
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
               statSubtitle="Nombre de prise"
               :statTitle="plug.nb"
-              statIconName="fas fa-percent"
-              statIconColor="bg-green-500"
+              statIconName="fas fa-plug"
+              statIconColor="bg-pink-500"
               :sub-stat="false"
             />
           </div>

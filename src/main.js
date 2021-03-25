@@ -19,8 +19,7 @@ import Auth from "@/layouts/Auth.vue";
 
 import Dashboard from "@/views/admin/Dashboard.vue";
 import Settings from "@/views/admin/Settings.vue";
-import Tables from "@/views/admin/Tables.vue";
-import Maps from "@/views/admin/Maps.vue";
+import Tables from "@/views/admin/RealTime.vue";
 
 // views for Auth layout
 
@@ -85,29 +84,22 @@ const routes = [
         component: Dashboard,
         meta: {
           requiresAuth: true,
-        }
+        },
       },
       {
         path: "/admin/settings",
         component: Settings,
         meta: {
           requiresAuth: true,
-        }
+        },
       },
       {
-        path: "/admin/tables",
+        path: "/admin/realtime",
         component: Tables,
         meta: {
           requiresAuth: true,
-        }
-      },
-      {
-        path: "/admin/maps",
-        component: Maps,
-        meta: {
-          requiresAuth: true,
-        }
-      },
+        },
+      }
     ],
   },
 ];
