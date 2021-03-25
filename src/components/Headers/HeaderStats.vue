@@ -7,50 +7,47 @@
         <div class="flex flex-wrap">
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="TRAFFIC"
-              statTitle="350,897"
-              statArrow="up"
-              statPercent="3.48"
+              statSubtitle="Température Moyenne"
+              :statTitle="temperature.avg"
+              :statArrow="temperature.arrow"
+              :statPercent="temperature.percent"
               statPercentColor="text-green-500"
               statDescripiron="Since last month"
-              statIconName="far fa-chart-bar"
+              statIconName="fas fa-thermometer-half"
               statIconColor="bg-red-500"
             />
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="NEW USERS"
-              statTitle="2,356"
-              statArrow="down"
-              statPercent="3.48"
+              statSubtitle="Humidité Moyenne"
+              :statTitle="humidity.avg"
+              :statArrow="humidity.arrow"
+              :statPercent="humidity.percent"
               statPercentColor="text-red-500"
               statDescripiron="Since last week"
-              statIconName="fas fa-chart-pie"
+              statIconName="fas fa-tint"
+              statIconColor="bg-blue-500"
+            />
+          </div>
+          <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+            <card-stats
+              statSubtitle="Consommation Moyenne"
+              :statTitle="consummation.avg"
+              :statArrow="consummation.arrow"
+              :statPercent="consummation.percent"
+              statPercentColor="text-orange-500"
+              statDescripiron="Since yesterday"
+              statIconName="fas fa-bolt"
               statIconColor="bg-orange-500"
             />
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="SALES"
-              statTitle="924"
-              statArrow="down"
-              statPercent="1.10"
-              statPercentColor="text-orange-500"
-              statDescripiron="Since yesterday"
-              statIconName="fas fa-users"
+              statSubtitle="Nombre de prise"
+              :statTitle="plug.nb"
+              statIconName="fas fa-plug"
               statIconColor="bg-pink-500"
-            />
-          </div>
-          <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-            <card-stats
-              statSubtitle="PERFORMANCE"
-              statTitle="49,65%"
-              statArrow="up"
-              statPercent="12"
-              statPercentColor="text-green-500"
-              statDescripiron="Since last month"
-              statIconName="fas fa-percent"
-              statIconColor="bg-green-500"
+              :sub-stat="false"
             />
           </div>
         </div>
@@ -63,8 +60,31 @@
 import CardStats from "@/components/Cards/CardStats.vue";
 
 export default {
+  name: "header-stats",
+  props:{
+    temperature:{
+      avg: 0,
+      percent:0,
+      arrow:"up"
+    },
+    humidity:{
+      avg: 0,
+      lastPeriod:0,
+      arrow:"up"
+    },
+    consummation:{
+      avg: 0,
+      lastPeriod:0,
+      arrow:"up"
+    },
+    plug:{
+      nb:1,
+    }
+  },
+  data() {
+  },
   components: {
     CardStats,
-  },
+  }
 };
 </script>

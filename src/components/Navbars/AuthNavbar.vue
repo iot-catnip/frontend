@@ -33,7 +33,7 @@
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/jojojojojota/iot-backend"
+              href="https://github.com/iot-catnip"
               target="_blank"
             >
               <i
@@ -45,7 +45,7 @@
           <li class="flex items-center">
             <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://github.com/jojojojojota/doc"
+                href="https://github.com/iot-catnip"
             >
               <i
                   class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"

@@ -19,20 +19,16 @@ import Auth from "@/layouts/Auth.vue";
 
 import Dashboard from "@/views/admin/Dashboard.vue";
 import Settings from "@/views/admin/Settings.vue";
-import Tables from "@/views/admin/Tables.vue";
-import Maps from "@/views/admin/Maps.vue";
+import Tables from "@/views/admin/RealTime.vue";
 
 // views for Auth layout
 
 import Login from "@/views/auth/Login.vue";
 
 // views without layouts
-
-import Landing from "@/views/Landing.vue";
-import Profile from "@/views/Profile.vue";
-import Index from "@/views/Index.vue";
 import axios from "axios";
 import {logoutRoutine} from "@/script/auth";
+import store from "core-js";
 
 // routes
 
@@ -41,12 +37,8 @@ const routes = [
    * Main Paths
    */
   {
-    path: "*",
-    redirect: "/",
-  },
-  {
     path: "/",
-    component: Index,
+    redirect: "/admin/dashboard",
     meta: {
       requiresAuth: true,
     }
@@ -92,47 +84,23 @@ const routes = [
         component: Dashboard,
         meta: {
           requiresAuth: true,
-        }
+        },
       },
       {
         path: "/admin/settings",
         component: Settings,
         meta: {
           requiresAuth: true,
-        }
+        },
       },
       {
-        path: "/admin/tables",
+        path: "/admin/realtime",
         component: Tables,
         meta: {
           requiresAuth: true,
-        }
-      },
-      {
-        path: "/admin/maps",
-        component: Maps,
-        meta: {
-          requiresAuth: true,
-        }
-      },
+        },
+      }
     ],
-  },
-  /**
-   * Other page (TODO: delete later)
-   */
-  {
-    path: "/landing",
-    component: Landing,
-    meta: {
-      requiresAuth: true,
-    }
-  },
-  {
-    path: "/profile",
-    component: Profile,
-    meta: {
-      requiresAuth: true,
-    }
   },
 ];
 
@@ -166,5 +134,6 @@ router.beforeEach((to, from, next) => {
 
 new Vue({
   router,
-  render: (h) => h(App),
+  store,
+  render: h => h(App)
 }).$mount("#app");

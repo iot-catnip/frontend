@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1071dbb7-4a39-4610-87a6-ef6a1075a26f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/CardHumidityRealTimeLineChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/CardTempRealTimeLineChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/CardWattLineChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/CardWattRealTimeLineChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardLineChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardTempHumidityLineChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardSettings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardSettings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardSocialTraffic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardSocialTraffic.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardStats.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardStats.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footers/FooterAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footers/FooterAdmin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Headers/HeaderStats.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Headers/HeaderStats.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbars/AdminNavbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbars/AdminNavbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbars/AuthNavbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbars/AuthNavbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Admin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script/dataLoading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script/dataLoading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Landing.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Profile.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Maps.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Tables.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/RealTime.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1q3rrLcsakPpgSipzQOJqOHSL8y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Cards" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Cards" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration default="true" type="js.build_tools.npm">
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build:tailwind" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:tailwind" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build:tailwind" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1071dbb7-4a39-4610-87a6-ef6a1075a26f" name="Default Changelist" comment="" />
+      <created>1616319312030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616319312030</updated>
+      <workItem from="1616319314020" duration="18918000" />
+      <workItem from="1616393627724" duration="747000" />
+      <workItem from="1616435715457" duration="6268000" />
+      <workItem from="1616606976760" duration="5120000" />
+      <workItem from="1616663006524" duration="18512000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

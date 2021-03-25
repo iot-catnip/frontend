@@ -14,7 +14,7 @@
               href="https://www.creative-tim.com?ref=vn-footer-admin"
               class="text-gray-600 hover:text-gray-800 text-sm font-semibold py-1"
             >
-              Creative Tim
+              IOTuturu
             </a>
           </div>
         </div>
@@ -22,31 +22,23 @@
           <ul class="flex flex-wrap list-none md:justify-end justify-center">
             <li>
               <a
-                href="https://www.creative-tim.com?ref=vn-footer-admin"
+                href="https://github.com/iot-catnip"
                 class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
               >
-                Creative Tim
+                GitHub
               </a>
             </li>
             <li>
               <a
-                href="https://www.creative-tim.com/presentation?ref=vn-footer-admin"
+                href="https://github.com/iot-catnip"
                 class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
               >
-                About Us
+                Docs
               </a>
             </li>
             <li>
               <a
-                href="http://blog.creative-tim.com?ref=vn-footer-admin"
-                class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
-              >
-                Blog
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/creativetimofficial/vue-notus/blob/master/LICENSE.md?ref=vn-footer-admin"
+                href="https://opensource.org/licenses/mit-license.php"
                 class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
               >
                 MIT License
